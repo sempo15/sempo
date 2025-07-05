@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Omar's Portfolio</title>
+  <style>
+    /* Base Styles */
+    body {
+      background-color: #45daff;
+      font-family: Arial, sans-serif;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #850000;
+      color: white;
+      padding: 30px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #000000;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Project Cards */
+    .project {
+      background-color: #c6c6c6;
+      border: 2px solid #87cefa;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Content Rows - for image + text combinations */
+    .content-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .content-row img {
+      border-radius: 5px;
+    }
+
+    .text-content {
+      max-width: 400px;
+      text-align: left;
+    }
+
+    .project ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .project li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(255,255,255,0.3);
+      padding: 10px 20px;
+      border-radius: 30px;
+    }
+
+    /* Specific list types */
+    .skills-list li {
+      background: rgba(100,200,255,0.3);
+    }
+
+    .hobbies-list li {
+      background: rgba(255,200,100,0.3);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #87cefa;
+      color: white;
+      padding: 15px;
+    }
+
+    /* Contact Form Styles */
+    .contact-form {
+      background-color: #c6c6c6;
+      border: 2px solid #87cefa;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 500px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #87cefa;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .contact-form textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      background-color: #850000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .contact-form button:hover {
+      background-color: #a00000;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Omar's Portfolio</h1>
+    <p>Hi! My name is Omar. I'm a programmer and designer</p>
+    <img src="images/omar.png" height="100" width="100">
+  </header>
+
+  <nav>
+    <a href="#projects">My Projects</a>
+    <a href="#contact">Contact Me</a>
+  </nav>
+
+  <main>
+    <h2 id="projects">My Projects</h2>
+
+    <div class="project">
+      <h3>My YouTube Channel</h3>
+      <div class="content-row">
+        <a href="https://www.youtube.com/@fahmanenakib" target="_blank">
+          <img src="images/file-An5wcc6Xs3jpKq2gWWKZMa (1).webp" height="150" width="150">
+        </a>
+        <div class="project">
+  <div class="content-row">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tKGPlD-JR4E?si=TN5Sj4j0aCoG05ZT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+
+        <div class="text-content">
+          <p>I run a YouTube channel where I share my gaming projects.</p>
+          <a href="https://www.youtube.com/@fahmanenakib" target="_blank">
+            <p>click here to access the channel</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Minecraft Website (Work in Progress)</h3>
+      <div class="content-row">
+        <a href="file:///C:/omar%20projets/html/minecraft%20guid.html">
+          <img src="images/creeper.jpeg" height="150" width="150">
+        </a>
+        <div class="text-content">
+          <p>I'm currently working on a Minecraft fan website with guides and tutorials.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>My Skills</h3>
+      <p>I specialize in these areas (always learning more!)</p>
+      <ul class="skills-list">
+        <li>
+          <img src="images/python.jfif" height="50" width="50">
+          <span>Programming</span>
+        </li>
+        <li>
+          <img src="images/Adobe_Photoshop_CC_icon.svg (1).png" height="50" width="50">
+          <span>Graphic Design</span>
+        </li>
+        <li>
+          <img src="images/téléchargement (1).jpeg" height="50" width="50">
+          <span>Web Development</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>My Hobbies</h3>
+      <p>When I'm not coding, I enjoy:</p>
+      <ul class="hobbies-list">
+        <li>
+          <img src="images/360_F_285904463_52tKiXp592qUhmg24eS3f4k1kGQSji3f.jpg" height="50" width="50">
+          <span>Gaming</span>
+        </li>
+        <li>
+          <img src="images/5bd9eb6eba7a9_ChptFranceKarate2018byBrandenburgerD045375768x555.jpg" height="50" width="50">
+          <span>full contact</span>
+        </li>
+        <li>
+          <img src="images/téléchargé.png" height="50" width="50">
+          <span>Chess</span>
+        </li>
+      </ul>
+    </div>
+
+    <h2 id="contact">Contact Me</h2>
+    <div class="project">
+      <p>Want to collaborate or have questions?</p>
+      <p>Email me at: <a href="mailto:bouifaomar@gmail.com">bouifaomar@gmail.com</a></p>
+
+      <div class="contact-form">
+        <h3>Send Me a Message</h3>
+        <form action="mailto:bouifaomar@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Omar's Portfolio | All Rights Reserved
+  </footer>
+</body>
+</html>
